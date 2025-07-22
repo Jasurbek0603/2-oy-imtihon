@@ -1,99 +1,217 @@
-let son = parseInt(prompt("1–999 oralig'ida son kiriting:"));
+// 1 - masala 3 tasi
 
-if (isNaN(son) || son < 1 || son > 999) {
-  console.log("Xatolik!");
-} else {
-  let yuz = Math.floor(son / 100);
-  let on = Math.floor((son % 100) / 10);
-  let bir = son % 10;
 
-  switch (yuz) {
-    case 1:
-         console.log("bir yuz");
-          break;
-    case 2: 
-         console.log("ikki yuz");
-          break;
-    case 3:
-         console.log("uch yuz");
-          break;
-    case 4: 
-          console.log("to'rt yuz"); 
-          break;
-    case 5:
-          console.log("besh yuz"); 
-          break;
-    case 6: 
-          console.log("olti yuz"); 
-          break;
-    case 7: 
-           console.log("yetti yuz");
-            break;
-    case 8: 
-          console.log("sakkiz yuz");
-           break;
-    case 9: 
-          console.log("to'qqiz yuz"); 
-          break;
-  }
+// function showAge(age) {
+//     console.log(sizning yoshingiz ${age})
+// }
 
-  switch (on) {
-    case 1: 
-         console.log("o'n"); 
-    break;
-    case 2:
-         console.log("yigirma"); 
-         break;
-    case 3: 
-         console.log("o'ttiz"); 
-         break;
-    case 4: 
-         console.log("qirq"); 
-         break;
-    case 5: 
-        console.log("ellik");
-         break;
-    case 6: 
-        console.log("oltmish"); 
-        break;
-    case 7: 
-         console.log("yetmish"); 
-          break;
-    case 8: 
-         console.log("sakson");
-          break;
-    case 9: 
-         console.log("to'qson"); 
-         break;
-  }
+// showAge(20)
 
-  switch (bir) {
-    case 1: 
-         console.log("bir"); 
-         break;
-    case 2: 
-         console.log("ikki"); 
-         break;
-    case 3: 
-         console.log("uch");
-          break;
-    case 4: 
-          console.log("to'rt");
-           break;
-    case 5: 
-           console.log("besh"); 
-           break;
-    case 6: 
-         console.log("olti"); 
-         break;
-    case 7: 
-         console.log("yetti"); 
-         break;
-    case 8: 
-         console.log("sakkiz");
-         break;
-    case 9:
-          console.log("to'qqiz"); 
-          break;
-  }
-}
+// 2
+
+// const showAge = function (age) {
+//     console.log(Sizning yoshingiz ${age});
+// };
+
+// showAge(20);
+
+// 3
+
+// const showAge = (age) => console.log(sizning yoshingiz ${age});
+
+// showAge(20)
+
+//   ///////////
+// 2 - masala 3tasi
+
+// function addNumbers(a, b) {
+//     console.log(a + b );
+// }
+// addNumbers(3, 7);
+
+// 2
+
+// const addNumbers = function( a, b){
+//     console.log(a + b)
+// }
+// addNumbers(3, 7)
+
+// 3
+
+// const addNumbers = (a, b) => console.log(a + b)
+
+// addNumbers( 3, 7)
+
+// ///////////
+
+// 3- masala 3tasi
+
+// function greet(name) {
+//     console.log(Salom, ${name}!);
+// }
+
+// greet('Ulugbek');
+
+// 2
+
+// const greet = function(name){
+//     console.log(Salom ${name}!)
+// }
+// greet('Ulugbek')
+
+// 3
+
+// const greet = (name) => console.log(Salom ${name}!)
+
+// greet('Ulugbek')
+
+
+// ////////
+
+// 4 -masala
+// function fullName(firstName, lastName){
+//     console.log(${firstName}  ${lastName})
+// }
+// fullName('Ali', 'Valiyev')
+
+// 2
+
+// const fullName = function(firstName, lastName){
+//     console.log(${firstName}  ${lastName})
+// }
+// fullName('Ali', 'Valiyev')
+
+// 3
+
+// const fullName = (firstName, lastName) => console.log(${firstName}  ${lastName})
+// fullName('Ali', 'Valiyev')
+
+// ///////
+// 5 masala
+// function rectanglePerimeter(length, width) {
+//     console.log(2 * (length + width));
+// }
+// rectanglePerimeter(5, 3);
+
+// 2
+
+// const rectanglePerimeter = function(length, width){
+//     console.log(2 * (length + width));
+// }
+// rectanglePerimeter(5, 3)
+
+// 3
+
+// const rectanglePerimeter =(length, width) => console.log(2 * (length + width))
+// rectanglePerimeter(5, 3)
+
+// 3
+
+// ////////
+// 6 -masala
+// function triangleSides(a, b, c) {
+//     console.log(1-tomon: ${a})
+//     console.log(2-tomon: ${b})
+//     console.log(3-tomon: ${c})
+// }
+
+// triangleSides(3, 4, 5);
+
+// 2
+
+// const triangleSides = function(a, b, c){
+//     console.log(1-tomon: ${a})
+//     console.log(2-tomon: ${b})
+//     console.log(3-tomon: ${c})
+// }
+// triangleSides(3, 4, 5)
+
+// 3
+
+// const triangleSides = (a, b, c) => {
+//     console.log(1-tomon: ${a})
+//     console.log(2-tomon: ${b})
+//     console.log(3-tomon: ${c})
+//   };
+//   triangleSides(3, 4, 5);
+ 
+////////////
+//   7 - masala
+// function squareNumber(number){
+//     console.log(number  2)
+// }
+// squareNumber(5)
+
+// 2
+
+// const squareNumber = function(number){
+//     console.log(number  2)
+// }
+// squareNumber(5)
+
+// 3
+
+// const squareNumber = (number) => console.log(number ** 2)
+// squareNumber(5)
+
+// ///////
+// 8 -masala
+// function animmalInfo(name, age){
+//     console.log(Bu ${name}, ${age} yoshda)
+// }
+// animmalInfo('Mushuk', 2)
+
+// 2
+
+// const animmalInfo = function(name, age){
+//     console.log(Bu ${name}, ${age} yoshda)
+// }
+// animmalInfo('Mushuk',2)
+
+// 3
+
+// const animmalInfo = (name, age) => console.log(Bu ${name}, ${age} yoshda)
+// animmalInfo('Mushuk',2)
+
+// ////////
+// 9 masala
+// function sayHello(world){
+//     console.log(${world})
+// }
+// sayHello('Salom Dunyo!')
+
+// 2
+
+// const sayHello = function(world){
+//     console.log(${world})
+// }
+// sayHello('Salom Dunyo!')
+
+// 3
+
+// const sayHello = (world) => console.log(${world})
+// sayHello('Salom Dunyo!')
+
+// /////////
+// 10 masala
+// function printNames(name1, name2, name3, name4, name5){
+//     console.log(${name1})
+//     console.log(${name2})
+//     console.log(${name3})
+//     console.log(${name4})
+//     console.log(${name5})
+// }
+// printNames('Ali','Vali', 'Gulbahor', 'Zilola', 'Javohir')
+
+// 2
+
+// const printNames = function(name1, name2, name3, name4, name5){
+//     console.log(${name1})
+//     console.log(${name2})
+//     console.log(${name3})
+//     console.log(${name4})
+//     console.log(${name5})
+// }
+// printNames('Ali','Vali', 'Gulbahor', 'Zilola', 'Javohir')
+
+// 3
